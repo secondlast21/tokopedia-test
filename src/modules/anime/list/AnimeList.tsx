@@ -1,6 +1,7 @@
 import React, { FC } from 'react'
 
 import styled from '@emotion/styled'
+import Navbar from "@/components/Navbar";
 
 const AnimeList: FC = () => {
   const Button = styled.button`
@@ -14,7 +15,12 @@ const AnimeList: FC = () => {
       color: white;
     }
   `
-  return <Button>This my button component.</Button>
+  return (
+      <>
+        <Navbar />
+        <Button>This my button component.</Button>
+      </>
+  )
 }
 
 export default AnimeList
